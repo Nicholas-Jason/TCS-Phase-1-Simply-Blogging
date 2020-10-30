@@ -5,23 +5,66 @@
     <link rel="text.css" href="bootstrap.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <ul class="nav">
-        <li class="nav"><a href="Home.html">Home</a></li>
-        <li class="nav"><a href="About.html">About</a></li>
-        <li class="nav"><a href="Contact.html">Contact Us</a></li>
-        <li class="nav"><a href="Blogs.html">Blogs</a></li>
+    <style>
+    body
+    {
+        background-image: url("https://previews.123rf.com/images/gyn9037/gyn90371204/gyn9037120400087/13103196-computer-lab-neatly-placed-rows-of-computer-.jpg");
+    }
+    
+
+    .navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  color: transparent;
+    }
+    #blogs
+    {
+        color: darkblue;
+        background-color: white;
+        background-size: auto;
+    }
+
+#acontent{
+    width:50%;
+    height: 50%;
+    padding: 18px 30px;
+    box-sizing:content-box;
+    position: relative;
+}
+h1, h3
+{
+    color: darkblue;
+}
+    </style>
+    <script src="script.js">
+   
+    </script>
+    
+    <ul class="navbar">
+        <li class="navbar"><a href="Home.html">Home</a></li>
+        <li class="navbar"><a href="About.html">About</a></li>
+        <li class="navbar"><a href="Contact.html">Contact Us</a></li>
+        <li class="navbar"><a href="Blogs.html">Blogs</a></li>
     </ul>
     <h1>Blogs</h1>
     <div id="blogs">
-
+        <section>
+            <h2>Rise of the Video-chat</h2>
+            <p>Video chat applications are nothing new having been around for years. However, current circumstances have made them essential part of life. Will their use increase or decrease after the pandemic has passed</p>
+        </section>
+        
+        
     </div>
-    <form>
+    <form> 
         <h3>Add Title</h3>
         <input type="text" name="Article_title">
         <h3>Add Article</h3>
-        <input type="text" name="Article">
-        <button onclick="addArticle()">Add Article</button>
+        <input type="text" id="acontent" name="Article" size="50" height="500">
+        <br>
+        <button  id="btn-add" type="submit" onclick="addArticle()">Add Article</button>
+
     </form>
     
 </body>
